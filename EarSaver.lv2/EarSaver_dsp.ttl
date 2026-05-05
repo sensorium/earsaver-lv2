@@ -90,7 +90,7 @@
     ;
 
     doap:name "EarSaver" ;
-    doap:license <https://opensource.org/license/bsd-3-clause> ;
+    doap:license <https://opensource.org/licenses/GPL-3.0> ;
 
     doap:maintainer [
         foaf:name "sensorium" ;
