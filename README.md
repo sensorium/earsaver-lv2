@@ -4,7 +4,6 @@ LV2 utility plugin for MOD Dwarf that automatically mutes audio
 when the signal exceeds a threshold — protecting your ears when 
 trying unknown plugins that suddenly screech into your headphones.
 
-
 ![EarSaver](EarSaver.lv2/modgui/pedals/boxy/earsaver-screenshot.png)
 
 ## Controls
