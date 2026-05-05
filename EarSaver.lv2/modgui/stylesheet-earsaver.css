@@ -1,0 +1,128 @@
+@import url(/fonts/nexa/stylesheet.css);
+@import url(/fonts/questrial/stylesheet.css);
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui {
+    --es-scale: 0.66;
+    --es-knob-frame: 42px;
+    --es-knob-frames: 50;
+    background-image: url(/resources/pedals/boxy/earsaver-base.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: calc(578px * var(--es-scale)) calc(382px * var(--es-scale));
+    border-radius: calc(40px * var(--es-scale));
+    height: calc(382px * var(--es-scale));
+    position: absolute;
+    width: calc(578px * var(--es-scale));
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-plugin-brand {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-plugin-brand h1 {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-plugin-name {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-plugin-name h1 {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-light {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-control-group {
+    left: calc(97px * var(--es-scale));
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: calc(298px * var(--es-scale));
+    z-index: 40;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-control-group .mod-knob {
+    height: var(--es-knob-frame);
+    position: relative;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-control-group .mod-knob .mod-knob-image {
+    background-image: url(/resources/knobs/boxy/earsaver-knob-50frames-50pc-hstrip.png{{{ns}}});
+    background-repeat: no-repeat;
+    background-size: calc(var(--es-knob-frame) * var(--es-knob-frames)) var(--es-knob-frame);
+    cursor: pointer;
+    height: var(--es-knob-frame);
+    margin: 0 auto;
+    width: var(--es-knob-frame);
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-control-group .mod-knob>span.mod-knob-title {
+    display: none;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-footswitch {
+    background: transparent;
+    cursor: pointer;
+    height: calc(64px * var(--es-scale));
+    left: calc(303px * var(--es-scale));
+    margin: 0;
+    position: absolute !important;
+    right: auto;
+    top: calc(268px * var(--es-scale));
+    width: calc(56px * var(--es-scale));
+    z-index: 60;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .earsaver-switch-on-overlay {
+    background-image: url(/resources/pedals/boxy/earsaver-switch-bezel-on.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: calc(178px * var(--es-scale)) calc(118px * var(--es-scale));
+    height: calc(118px * var(--es-scale));
+    left: calc(315px * var(--es-scale));
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(264px * var(--es-scale));
+    transition: opacity 120ms linear;
+    width: calc(178px * var(--es-scale));
+    z-index: 50;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-footswitch.off~.earsaver-switch-on-overlay {
+    opacity: 1;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .earsaver-mute-led {
+    background-image: url(/resources/pedals/boxy/earsaver-mute-sprite.png{{{ns}}});
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: calc(522px * var(--es-scale)) calc(612px * var(--es-scale));
+    height: calc(306px * var(--es-scale));
+    left: calc(28px * var(--es-scale));
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(2px * var(--es-scale));
+    transition: opacity 100ms linear;
+    width: calc(522px * var(--es-scale));
+    z-index: 20;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-footswitch.off~.earsaver-mute-led {
+    opacity: 1;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .earsaver-mute-led.active {
+    background-position-y: bottom;
+}
+
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-pedal-input,
+.mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-pedal-output {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(calc(-50% - 2px));
+}

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:hvcc:EarSaver>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui/> ;
+        modgui:iconTemplate <modgui/icon-earsaver.html> ;
+        modgui:stylesheet <modgui/stylesheet-earsaver.css> ;
+        modgui:javascript <modgui/earsaver.js> ;
+        modgui:screenshot <modgui/pedals/boxy/earsaver-screenshot.png> ;
+        modgui:thumbnail <modgui/pedals/boxy/earsaver-thumbnail.png> ;
+        modgui:brand "sensorium" ;
+        modgui:label "EarSaver" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "white" ;
+        modgui:knob "silver" ;
+        modgui:monitoredOutputs [
+            lv2:symbol "muting" ;
+        ] ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "threshold" ;
+            lv2:name "threshold" ;
+        ] ;
+    ] .
