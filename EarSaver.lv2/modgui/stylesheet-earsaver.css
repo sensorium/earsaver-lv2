@@ -66,12 +66,12 @@
 .mod-pedal[class*="mod-pedal-boxy"].earsaver-ui .mod-footswitch {
     background: transparent;
     cursor: pointer;
-    height: calc(64px * var(--es-scale));
-    left: calc(303px * var(--es-scale));
+    height: calc(68px * var(--es-scale));
+    left: calc(320px * var(--es-scale));
     margin: 0;
     position: absolute !important;
     right: auto;
-    top: calc(268px * var(--es-scale));
+    top: calc(290px * var(--es-scale));
     transform: none !important;
     width: calc(56px * var(--es-scale));
     z-index: 60;
