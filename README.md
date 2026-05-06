@@ -1,8 +1,7 @@
 # EarSaver
 
-LV2 utility plugin for MOD Dwarf that automatically mutes audio 
-when the signal exceeds a threshold — protecting your ears when 
-trying unknown plugins that suddenly screech into your headphones.
+LV2 utility plugin for MOD devices that automatically mutes audio 
+when the signal exceeds a threshold, to protect your ears from unfamiliar plugins that might suddenly screech into your headphones.
 
 ![EarSaver](EarSaver.lv2/modgui/pedals/boxy/earsaver-screenshot.png)
 
@@ -15,8 +14,7 @@ trying unknown plugins that suddenly screech into your headphones.
 Produced with [Plugdata](https://plugdata.org/) and the 
 [hvcc](https://github.com/Wasted-Audio/hvcc) compiler.
 
-This plugin is built for MOD Dwarf using the 
-[MOD Cloud Builder](https://builder.mod.audio/).
+Built for MOD hardware using [MOD Cloud Builder](https://builder.mod.audio/).
 Building for other platforms is not currently supported.
 
 ## License
