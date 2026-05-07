@@ -1,7 +1,7 @@
 # EarSaver
 
-LV2 utility plugin for MOD devices that automatically mutes audio 
-when the signal exceeds a threshold, to protect your ears from unfamiliar plugins that might suddenly screech into your headphones.
+LV2 utility plugin for MOD devices that automatically mutes sounds that are too loud.  Like when you're trying out unknown plugins that suddenly screech into your headphones...
+
 
 ![EarSaver](EarSaver.lv2/modgui/pedals/boxy/earsaver-screenshot.png)
 
